@@ -1,0 +1,29 @@
+section.footer-wrapper
+  .footer-nav
+    mixin footerNav(href, name)
+      li.footer-nav__item 
+        a(href= href)=  name
+    ul.footer-nav__container
+      li.footer-nav__section Услуги
+        ul
+          +footerNav("https://#", "Для физических лиц")
+          +footerNav("https://#", "Для юридических лиц")
+          +footerNav("https://#", "Подбор жилья")
+          +footerNav("https://#", "Оформление документов")
+          +footerNav("https://#", "Перевозка вещей")
+      li.footer-nav__section Партнерам
+        ul
+          +footerNav("https://#", "Владельцам общежитий")
+          +footerNav("https://#", "Для сайтов парнеров")
+          +footerNav("https://#", "Владельцам хостелов")
+      li.footer-nav__section О нас
+        ul
+          +footerNav("https://#", "Контакты")
+          +footerNav("https://#", "О проекте")
+          +footerNav("https://#", "FAQ")
+  .footer-contact
+    include ../components/contact.pug
+  hr.hr-styled
+  .footer-rights
+    span Все права защищены.
+    span Copyright &copy; 2019

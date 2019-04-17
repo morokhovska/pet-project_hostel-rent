@@ -1,0 +1,19 @@
+.button {
+  padding: 10px 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  background: none;
+  border: none;
+  border-radius: 3px;
+  text-transform: uppercase;
+  cursor: pointer;
+  &.dark {
+    color: #fff;
+    background-color: #313131;
+  }
+  &.yellow {
+    color: #313131;
+    background-color: #ffcf00;
+  }
+}

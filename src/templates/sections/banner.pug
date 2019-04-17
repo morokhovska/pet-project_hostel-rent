@@ -1,0 +1,15 @@
+.banner__text
+  .banner__text--head
+    h1 Все общежития на одном сайте
+  .banner__text--subhead
+    h2 Бронируйте общежития по низким ценам без комиссии
+.banner__cards
+  mixin bannerCard(src, text)
+    .banner__card
+      .banner__card--icon
+        img(src=src)
+      .banner__card--text
+        span=text
+  +bannerCard('../../assets/icons/icon1.png', 'Мы не берем комиссию за бронирование')
+  +bannerCard('../../assets/icons/icon2.png', 'Мы заботимся о своих клиентах. Вы всегда можете позвонить нам и мы решим вашу проблему')
+  +bannerCard('../../assets/icons/icon3.png', 'Круглосуточный сервис поддержки наших клиентов')

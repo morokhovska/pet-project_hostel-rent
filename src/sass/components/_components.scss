@@ -1,0 +1,35 @@
+span.marked {
+  text-decoration: underline solid #ffcf00;
+}
+hr.hr-styled {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  &__text {
+    font-size: 0.7rem;
+  }
+  &__number {
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 353px) {
+  .contact {
+    &__text {
+      line-height: 1em;
+      font-size: 0.5rem;
+    }
+    &__number {
+      line-height: 1.2rem;
+      font-size: 1em;
+      font-weight: 600;
+    }
+  }
+}

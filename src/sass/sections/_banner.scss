@@ -1,0 +1,109 @@
+.banner {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  &:nth-child(4) {
+    order: 4;
+  }
+  &__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 10px;
+    &--head {
+      text-align: center;
+      line-height: 2.6rem;
+      font-size: 2.5rem;
+      font-weight: 600;
+    }
+    &--subhead {
+      padding-top: 15px;
+      text-align: center;
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+  }
+  &__cards {
+    margin: 70px auto 150px;
+    display: flex;
+    justify-content: center;
+  }
+  &__card {
+    margin: 0px 15px;
+    display: flex;
+    flex-direction: row;
+    word-break: normal;
+    flex-basis: 16%;
+    &--text {
+      padding-left: 5px;
+      text-align: start;
+    }
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 353px) {
+  .banner {
+    &__text {
+      padding-bottom: 150px;
+      background-color: #ffcf00;
+    }
+    &__cards {
+      flex-direction: column;
+      align-items: center;
+      padding-top: 100px;
+    }
+    &__card {
+      padding: 20px 0px;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+@media only screen and (min-width: 354px) and (max-width: 480px) {
+  .banner {
+    padding-bottom: 100px;
+    background-color: #ffcf00;
+    &__text {
+      padding: 10px 10px;
+    }
+    &__card {
+      padding: 20px 0px;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .banner {
+    padding-bottom: 100px;
+    padding-top: 50px;
+    background-color: #ffcf00;
+    &__text {
+      &--head {
+        line-height: 2rem;
+        font-size: 2rem;
+        font-weight: 600;
+      } 
+      &--subhead {
+        font-size: 1rem;
+      }     
+    }
+    &__card {
+      padding: 20px;
+      flex-direction: column;
+      align-items: flex-start;
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: 50px;
+      &--text {
+        text-align: start;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 769px) {
+  .banner {
+    background-color: #ffcf00;
+  }
+}

@@ -1,0 +1,145 @@
+.footer {  
+  width: 100%;
+  &-wrapper {
+    width: 100%;
+    position: relative;
+  }
+  &-nav {
+    background-color: #f7f8fb;
+    &__container {
+      margin: 0 auto;
+      width: 50%;     
+      display: flex;
+      flex-wrap: wrap;     
+      justify-content: flex-start;      
+    }
+    &__section {
+      padding-top: 10px;
+      padding-right: 15px;
+      text-transform: uppercase;
+      display: flex;
+      flex-direction: column;
+    }
+    &__item {
+      text-transform: none;
+      a {
+        color: #468fff;
+      }
+    }
+  }
+  &-contact {
+    padding: 10px 0px;
+    position: absolute;
+    top: 45px;
+    right: 477px;
+  }
+  &-rights {
+    padding: 10px 0px;
+    display: flex;
+    
+    span:nth-child(1) {
+      margin-right: 10px;
+    }
+  }
+  .hr-styled {
+    display: none;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 353px) {
+  .footer {  
+    &-wrapper {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      &-nav {
+        &__container {
+          flex-direction: column;
+        }
+      }
+      &-rights {
+        flex-direction: column;
+        line-height: 0.8rem;
+        font-size: 0.7rem;
+      }
+      .hr-styled {
+        display: block;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 354px) and (max-width: 480px) {
+  .footer {  
+    &-wrapper {
+      width: 100%;
+      display: inline-flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    &-nav {
+      &:nth-child(1) {
+        order: 1;
+        width: 100%;
+      }
+      &__container {
+        flex-direction: column;
+      }
+    }
+    &-contact {
+      &:nth-child(2) {
+        order: 2;
+        width: 50%;
+      }
+    }
+    &-rights {
+      flex-direction: column;
+      &:nth-child(4) {
+        order: 3;
+        width: 50%;
+      }
+      font-size: 0.7rem;
+    }
+  }
+  .hr-styled {
+    display: none;
+    &:nth-child(3) {
+      order: 4;
+    }
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .footer {  
+    &-wrapper {
+      width: 100%;
+      display: inline-flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    &-nav {
+      &:nth-child(1) {
+        order: 1;
+        width: 100%;
+      }
+    }
+    &-contact {
+      &:nth-child(2) {
+        order: 2;
+        width: 50%;
+      }
+    }
+    &-rights {
+      flex-direction: column;
+      &:nth-child(4) {
+        order: 3;
+        width: 50%;
+      }
+      text-align: end;
+      font-size: 0.7rem;
+    }
+  }
+  .hr-styled {
+    display: none;
+    &:nth-child(3) {
+      order: 4;
+    }
+  }
+}

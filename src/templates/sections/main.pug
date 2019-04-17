@@ -1,0 +1,30 @@
+section.main__wrapper
+  .main__head
+    span Более 
+      span.marked 2000
+      |  общежитий во всех городах Украины
+  .main__cities
+    mixin cityCard(src, href, name, subname)
+      a.card(href= href)
+        .card__icon
+          img(src=src)
+        .card__text
+            .card__text--name
+              span= name
+            .card__text--subname
+              span= subname
+    +cityCard('../../assets/img/card-img1.png', 'http://#', 'Харьков', '45 общежитий')
+    +cityCard('../../assets/img/card-img1.png', 'http://#', 'Киев', '107 общежитий')
+    +cityCard('../../assets/img/card-img1.png', 'http://#', 'Львов', '32 общежитий')
+    +cityCard('../../assets/img/card-img1.png', 'http://#', 'Тернополь', '18 общежитий')
+    +cityCard('../../assets/img/card-img1.png', 'http://#', 'Мукачеве', '5 общежитий')
+    +cityCard('../../assets/img/card-img1.png', 'http://#', 'Луцк', '10 общежитий')
+  .main__look-all
+    a(href="http://#") Посмотреть все города
+      br
+      span.arrow &rarr;
+  .main__target
+    .main__target--head
+      span Цель - повысить эффективность работы
+    .main__target--text
+      p Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio voluptatum dolores, nam cumque sed itaque dolorem porro fuga assumenda aspernatur quas, voluptatem perspiciatis vitae ut saepe iste quos error possimus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum id commodi, atque quas officia maxime obcaecati consectetur unde asperiores odio eligendi autem aliquid repellendus eum. Amet ipsa officia numquam est.
